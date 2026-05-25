@@ -1,0 +1,5 @@
+database dan master golang nya ada di folder postman
+setting koneksi golang ke database ada di file .env
+restore dulu db seperti biasa
+jangan lupa install postman 
+terus import ApiGas.postman_collection.json ada di folder postman

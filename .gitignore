@@ -1,0 +1,11 @@
+.env
+tmp/
+*.log
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+dist/
+build/

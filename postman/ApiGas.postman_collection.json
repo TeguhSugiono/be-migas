@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "a2bc559b-1253-4a86-883f-e77cbd9cf477",
+    "name": "ApiGas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2494232"
+  },
+  "item": [
+    {
+      "name": "Insert Data",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status_gas\": false,\r\n  \"alarm_status\": \"AMAN\",\r\n  \"wifi_status\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://192.168.1.6:2211/api/v1/gas",
+          "protocol": "http",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "port": "2211",
+          "path": [
+            "api",
+            "v1",
+            "gas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Insert Data Kirim WA",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "cYCNskLZ6SYonmzcZRVe",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"status_gas\": true,\r\n  \"alarm_status\": \"BAHAYA\",\r\n  \"wifi_status\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://192.168.1.6:2211/api/v1/gas",
+          "protocol": "http",
+          "host": [
+            "192",
+            "168",
+            "1",
+            "6"
+          ],
+          "port": "2211",
+          "path": [
+            "api",
+            "v1",
+            "gas"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
